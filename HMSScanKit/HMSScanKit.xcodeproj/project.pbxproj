@@ -13,6 +13,7 @@
 		04A3A3CE25122CE5005C92AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A3A3CC25122CE5005C92AC /* Main.storyboard */; };
 		04A3A3D025122CE9005C92AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A3A3CF25122CE9005C92AC /* Assets.xcassets */; };
 		04A3A3D325122CE9005C92AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A3A3D125122CE9005C92AC /* LaunchScreen.storyboard */; };
+		4E60FEE79D4D13D726029057 /* Pods_HMSScanKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC46829A10F4030079D9CB90 /* Pods_HMSScanKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		04A3A3CF25122CE9005C92AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A3A3D225122CE9005C92AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04A3A3D425122CE9005C92AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		082B888FDE81251DE6B59AF7 /* Pods-HMSScanKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMSScanKit.debug.xcconfig"; path = "Target Support Files/Pods-HMSScanKit/Pods-HMSScanKit.debug.xcconfig"; sourceTree = "<group>"; };
+		53D1C780B24348D650D6F7D0 /* Pods-HMSScanKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMSScanKit.release.xcconfig"; path = "Target Support Files/Pods-HMSScanKit/Pods-HMSScanKit.release.xcconfig"; sourceTree = "<group>"; };
+		DC46829A10F4030079D9CB90 /* Pods_HMSScanKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HMSScanKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E60FEE79D4D13D726029057 /* Pods_HMSScanKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				04A3A3C525122CE5005C92AC /* HMSScanKit */,
 				04A3A3C425122CE5005C92AC /* Products */,
+				E0CBF5B5BBBFB667DD2BCB6F /* Pods */,
+				24D5836B38068B6FAD3C175D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = HMSScanKit;
 			sourceTree = "<group>";
 		};
+		24D5836B38068B6FAD3C175D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC46829A10F4030079D9CB90 /* Pods_HMSScanKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0CBF5B5BBBFB667DD2BCB6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				082B888FDE81251DE6B59AF7 /* Pods-HMSScanKit.debug.xcconfig */,
+				53D1C780B24348D650D6F7D0 /* Pods-HMSScanKit.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04A3A3D725122CE9005C92AC /* Build configuration list for PBXNativeTarget "HMSScanKit" */;
 			buildPhases = (
+				8316BF8F98590885BE26CD9B /* [CP] Check Pods Manifest.lock */,
 				04A3A3BF25122CE5005C92AC /* Sources */,
 				04A3A3C025122CE5005C92AC /* Frameworks */,
 				04A3A3C125122CE5005C92AC /* Resources */,
+				4C246683240ABC07EB9B0CC0 /* [CP] Embed Pods Frameworks */,
+				9220D0D5A06B9AC927F749EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +160,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C246683240ABC07EB9B0CC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HMSScanKit/Pods-HMSScanKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HMSScanKit/Pods-HMSScanKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HMSScanKit/Pods-HMSScanKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8316BF8F98590885BE26CD9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HMSScanKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9220D0D5A06B9AC927F749EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HMSScanKit/Pods-HMSScanKit-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HMSScanKit/Pods-HMSScanKit-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HMSScanKit/Pods-HMSScanKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04A3A3BF25122CE5005C92AC /* Sources */ = {
@@ -282,6 +369,7 @@
 		};
 		04A3A3D825122CE9005C92AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 082B888FDE81251DE6B59AF7 /* Pods-HMSScanKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +388,7 @@
 		};
 		04A3A3D925122CE9005C92AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53D1C780B24348D650D6F7D0 /* Pods-HMSScanKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

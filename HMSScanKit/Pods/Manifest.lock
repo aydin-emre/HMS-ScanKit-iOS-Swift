@@ -1,0 +1,16 @@
+PODS:
+  - ScanKitFrameWork (1.0.1.300)
+
+DEPENDENCIES:
+  - ScanKitFrameWork
+
+SPEC REPOS:
+  trunk:
+    - ScanKitFrameWork
+
+SPEC CHECKSUMS:
+  ScanKitFrameWork: 5f3dc3d0fe41293dcb393f89460acbc7557257ec
+
+PODFILE CHECKSUM: fe35091ae94fed8c5b7411e50ee58803f162b804
+
+COCOAPODS: 1.10.0.beta.2

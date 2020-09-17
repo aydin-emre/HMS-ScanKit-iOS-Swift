@@ -1,0 +1,6 @@
+framework module Pods_HMSScanKit {
+  umbrella header "Pods-HMSScanKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
