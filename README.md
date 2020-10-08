@@ -13,10 +13,10 @@ ScanKit works in suboptimal situations, such as under dim lighting or when the b
 
 <table>
   <tr>
-    <td>
+    <td width="450px">
       <img src="https://i.ibb.co/hKvQVg2/IMG-9804.png">
     </td>
-    <td>
+    <td width="450px">
       <img src="https://i.ibb.co/wBwX3Lw/IMG-9806.png">
     </td>
   </tr>
